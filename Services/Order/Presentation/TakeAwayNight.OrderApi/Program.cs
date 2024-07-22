@@ -1,6 +1,8 @@
 using TakeAwayNight.Application.Features.CQRS.Handlers.AddressHandlers;
 using TakeAwayNight.Application.Features.CQRS.Queries.AddressQueries;
+using TakeAwayNight.Application.Interfaces;
 using TakeAwayNight.Persistence.Context;
+using TakeAwayNight.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,9 @@ builder.Services.AddScoped<GetAddressByIdQuery>();
 builder.Services.AddScoped<CreateAddressCommandHandler>();
 builder.Services.AddScoped<UpdateAddressCommandHandler>();
 builder.Services.AddScoped<RemoveAddressCommandHandler>();
+
+builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

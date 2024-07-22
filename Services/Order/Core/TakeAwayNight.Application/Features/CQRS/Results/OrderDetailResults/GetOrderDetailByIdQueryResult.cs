@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TakeAwayNight.Domain.Entities;
 
 namespace TakeAwayNight.Application.Features.CQRS.Results.OrderDetailResults
 {
@@ -15,6 +16,6 @@ namespace TakeAwayNight.Application.Features.CQRS.Results.OrderDetailResults
         public int Amount { get; set; }
         public decimal TotalPrice { get; set; }
         public int OrderingId { get; set; }
-        public Ordering Ordering { get; set; }
+       
     }
 }
