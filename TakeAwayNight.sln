@@ -27,13 +27,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CA784D5C-7CBE-40FC-9C39-927D1F1D83F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAwayNight.Application", "Services\Order\Core\TakeAwayNight.Application\TakeAwayNight.Application.csproj", "{27914882-3110-4BF5-B616-10D7E01CEB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAwayNight.Application", "Services\Order\Core\TakeAwayNight.Application\TakeAwayNight.Application.csproj", "{27914882-3110-4BF5-B616-10D7E01CEB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAwayNight.Domain", "Services\Order\Core\TakeAwavyNight.Domain\TakeAwayNight.Domain.csproj", "{CE3D9CE9-D098-4C53-A0C8-A73E9475AE3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAwayNight.Domain", "Services\Order\Core\TakeAwavyNight.Domain\TakeAwayNight.Domain.csproj", "{CE3D9CE9-D098-4C53-A0C8-A73E9475AE3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAwayNight.Persistence", "Services\Order\Infrastructure\TakeAwayNight.Persistence\TakeAwayNight.Persistence.csproj", "{FE058A26-A36D-422E-A930-C063DFE9F458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAwayNight.Persistence", "Services\Order\Infrastructure\TakeAwayNight.Persistence\TakeAwayNight.Persistence.csproj", "{FE058A26-A36D-422E-A930-C063DFE9F458}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAwayNight.OrderApi", "Services\Order\Presentation\TakeAwayNight.OrderApi\TakeAwayNight.OrderApi.csproj", "{1704E9CD-3F51-4405-8DE2-676A537AE7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAwayNight.OrderApi", "Services\Order\Presentation\TakeAwayNight.OrderApi\TakeAwayNight.OrderApi.csproj", "{1704E9CD-3F51-4405-8DE2-676A537AE7D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAwayNight.IdentityServer", "IdentityServer\TakeAwayNight.IdentityServer\TakeAwayNight.IdentityServer.csproj", "{046E8B37-0983-4AF0-8F59-429B77F6762F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{1704E9CD-3F51-4405-8DE2-676A537AE7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1704E9CD-3F51-4405-8DE2-676A537AE7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1704E9CD-3F51-4405-8DE2-676A537AE7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046E8B37-0983-4AF0-8F59-429B77F6762F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046E8B37-0983-4AF0-8F59-429B77F6762F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046E8B37-0983-4AF0-8F59-429B77F6762F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046E8B37-0983-4AF0-8F59-429B77F6762F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{CE3D9CE9-D098-4C53-A0C8-A73E9475AE3F} = {F5AF0FE1-A76C-42A7-8F4A-148543D5FE22}
 		{FE058A26-A36D-422E-A930-C063DFE9F458} = {DC362C90-3FE1-4AB0-8737-84D8455AD833}
 		{1704E9CD-3F51-4405-8DE2-676A537AE7D3} = {CA784D5C-7CBE-40FC-9C39-927D1F1D83F4}
+		{046E8B37-0983-4AF0-8F59-429B77F6762F} = {4BAEB157-C304-46BE-93FD-E3B68825A980}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63511903-D8A5-4511-8980-F92E6AC4DA56}
